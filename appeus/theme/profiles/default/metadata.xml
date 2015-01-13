@@ -3,5 +3,10 @@
   <version>1000</version>
   <dependencies>
     <dependency>profile-plonetheme.bootstrap:default</dependency>
+    <dependency>profile-appeus.content:default</dependency>
+    <dependency>profile-eea.tags:default</dependency>
+    <dependency>profile-eea.facetednavigation:default</dependency>
+    <dependency>profile-plone.app.contenttypes:default</dependency>
+    <dependency>profile-cs.folderishpage:default</dependency>
   </dependencies>
 </metadata>
