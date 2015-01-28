@@ -37,11 +37,8 @@
                              navigation_root_url context/@@plone_portal_state/navigation_root_url;
                              pas_member context/@@pas_member;">
         <tal:listing condition="batch">
-
-
-
-          <div class="row">
-            <dl metal:define-slot="entries">
+          <metal:entries define-slot="entries">
+            <dl>
                 <tal:entry tal:repeat="item batch" metal:define-macro="entries">
                 <tal:block tal:define="item_url item/getURL;
                                        item_id item/getId;
@@ -167,9 +164,9 @@
                 </tal:block>
                 </tal:entry>
             </dl>
+          </metal:entries>
 
 
-          </div>
 
           <div class="row">
 
