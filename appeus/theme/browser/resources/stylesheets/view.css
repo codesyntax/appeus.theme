@@ -19,7 +19,7 @@
 */
 #top-area {
 }
-
+/*
 #center-and-left-area {
   float: left;
   margin-right: -25em;
@@ -43,7 +43,7 @@
   width: 25em;
   overflow: hidden;
 }
-
+*/
 #center-top-area {
 }
 
@@ -53,7 +53,7 @@
 #bottom-area {
   clear: both;
 }
-
+/*
 .right-area-js {
   margin-right: 25em;
 }
