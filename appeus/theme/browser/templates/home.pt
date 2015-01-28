@@ -24,7 +24,7 @@
                       <img src="" alt=""
                            tal:define="scales obj/@@images;
                                        scale python:scales.scale('image', width=150, height=150, direction='bottom')"
-                           tal:replace="structure python:scale and scale.tag(css_class='tileImage pull-right') or None" />
+                           tal:replace="structure python:scale and scale.tag(css_class='tileImage') or None" />
                   </div>
             </a>
 
