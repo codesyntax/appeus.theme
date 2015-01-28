@@ -21,7 +21,7 @@
     <metal:entries fill-slot="entries">
     <metal:block use-macro="context/standard_view/macros/entries">
     <metal:entry fill-slot="entry">
-        <div class="col-md-2 col-sm-4">
+        <div class="col-md-2 col-sm-4"  tal:define="cropText nocall:here/@@plone/cropText">
           <div class="tileItem visualIEFloatFix"
              tal:define="obj item/getObject">
             <a href="#"
@@ -30,7 +30,7 @@
                   <div class="tileImage">
                       <img src="" alt=""
                            tal:define="scales obj/@@images;
-                                       scale python:scales.scale('image', width=150, height=150, direction='bottom')"
+                                       scale python:scales.scale('image', width=150, height=150, direction='down')"
                            tal:replace="structure python:scale and scale.tag(css_class='tileImage') or None" />
                   </div>
             </a>
@@ -45,7 +45,7 @@
             </h2>
 
             <p class="tileBody" tal:condition="item_description">
-                <span class="description" tal:content="item_description">
+                <span class="description" tal:content="python:cropText(item_description, 200)">
                     description
                 </span>
             </p>
