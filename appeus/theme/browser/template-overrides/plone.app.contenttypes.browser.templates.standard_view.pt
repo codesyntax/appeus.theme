@@ -38,9 +38,9 @@
                              pas_member context/@@pas_member;">
         <tal:listing condition="batch">
 
+
+
           <div class="row">
-
-
             <dl metal:define-slot="entries">
                 <tal:entry tal:repeat="item batch" metal:define-macro="entries">
                 <tal:block tal:define="item_url item/getURL;
