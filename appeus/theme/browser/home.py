@@ -7,4 +7,4 @@ grok.templatedir('templates')
 class Home(grok.View):
     grok.context(ICollection)
     grok.require('zope2.View')
-    grok.name('home-view')
+    grok.name('home')
