@@ -24,7 +24,7 @@
 
     <browser:resource
       name="eea.faceted-navigation.css"
-      file="./stylesheets/view.css"
+      file="./resources/stylesheets/view.css"
       layer=".interfaces.IThemeSpecific"
      />
 
