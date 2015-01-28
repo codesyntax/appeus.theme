@@ -17,35 +17,35 @@
     <metal:position use-macro="here/@@faceted_macros/macros/position" />
   </div>
 
-  <!-- Left & Center-->
-  <div id="center-and-left-area">
-    <!-- Center -->
-    <div id="center-area">
-      <div id="center-content-area">
-        <!-- Center top -->
-        <div tal:define="position string:center" id="center-top-area">
-          <metal:position use-macro="here/@@faceted_macros/macros/position" />
+  <div class="row">
+    <div class="col-md-8">
+      <!-- Left & Center-->
+      <div id="center-and-left-area" class="row">
+        <!-- Center -->
+        <div id="center-area" class="col-md-12">
+          <div id="center-content-area">
+            <!-- Center top -->
+            <div tal:define="position string:center" id="center-top-area">
+              <metal:position use-macro="here/@@faceted_macros/macros/position" />
+            </div>
+
+            <!-- Content -->
+            <metal:results use-macro="here/@@faceted_macros/macros/results" />
+
+            <!-- Center bottom -->
+            <div tal:define="position string:bottomcenter" id="center-bottom-area">
+              <metal:position use-macro="here/@@faceted_macros/macros/position" />
+            </div>
+          </div>
         </div>
 
-        <!-- Content -->
-        <metal:results use-macro="here/@@faceted_macros/macros/results" />
-
-        <!-- Center bottom -->
-        <div tal:define="position string:bottomcenter" id="center-bottom-area">
-          <metal:position use-macro="here/@@faceted_macros/macros/position" />
-        </div>
       </div>
     </div>
 
-    <!-- Left column -->
-    <div tal:define="position string:left" id="left-area">
+    <!-- Right -->
+    <div tal:define="position string:right" id="right-area" class="col-md-4">
       <metal:position use-macro="here/@@faceted_macros/macros/position" />
     </div>
-  </div>
-
-  <!-- Right -->
-  <div tal:define="position string:right" id="right-area">
-    <metal:position use-macro="here/@@faceted_macros/macros/position" />
   </div>
 
   <!-- Bottom -->
