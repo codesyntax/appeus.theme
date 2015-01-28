@@ -22,6 +22,12 @@
         layer=".interfaces.IThemeSpecific" />
 
 
+    <browser:resource
+      name="eea.faceted-navigation.css"
+      file="./stylesheets/view.css"
+      layer=".interfaces.IThemeSpecific"
+     />
+
     <configure package="plone.batching">
       <browser:page
           name="batchnavigation"
