@@ -19,6 +19,7 @@
 <metal:block use-macro="context/standard_view/macros/content-core">
 
     <metal:entries fill-slot="entries">
+    <div class="row">
     <metal:block use-macro="context/standard_view/macros/entries">
     <metal:entry fill-slot="entry">
         <div class="col-md-2 col-sm-4"  tal:define="cropText nocall:here/@@plone/cropText">
@@ -55,6 +56,7 @@
 
     </metal:entry>
     </metal:block>
+    </div>
     </metal:entries>
 
 </metal:block>
