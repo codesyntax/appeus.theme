@@ -5,6 +5,7 @@
       lang="en"
       metal:use-macro="context/main_template/macros/master"
       i18n:domain="plone">
+
 <body>
 
 <metal:head fill-slot="javascript_head_slot">
@@ -19,6 +20,15 @@
   })
 </script>
 </metal:head>
+
+<metal:override fill-slot="top_slot"
+    tal:define="disable_column_two python:request.set('disable_plone.rightcolumn',1);"/>
+
+
+<metal:column fill-slot="column_two_slot">
+
+</metal:column>
+
 
 <metal:main fill-slot="main">
   <metal:block define-macro="main">
