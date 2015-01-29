@@ -19,10 +19,40 @@
 <metal:block use-macro="context/standard_view/macros/content-core">
 
     <metal:entries fill-slot="entries">
+
+      <div id="featured-app"
+        tal:define="featured python:view.get_selected_app()"
+        tal:condition="nocall:featured">
+        <div class="row">
+          <div class="col-md-6">
+              <img src="" alt=""
+                   tal:define="scales featured/@@images;
+                               scale python:scales.scale('image', width=400, height=400, direction='down')"
+                   tal:replace="structure python:scale and scale.tag(css_class='tileImage') or None" />
+
+          </div>
+          <div class="col-md-6">
+            <h2>
+              <a href="" tal:attributes="href featured/absolute_url"
+                tal:content="featured/title">
+                Title
+              </a>
+            </h2>
+            <p class="description"
+              tal:define="cropText nocall:here/@@plone/cropText"
+              tal:content="python:cropText(featured.Description(), 600)">
+              Description
+            </p>
+          </div>
+
+        </div>
+      </div>
+
+
     <div class="row">
     <metal:block use-macro="context/standard_view/macros/entries">
     <metal:entry fill-slot="entry">
-        <div class="col-md-2 col-sm-4"  tal:define="cropText nocall:here/@@plone/cropText">
+        <div class="col-md-3 col-sm-4"  tal:define="cropText nocall:here/@@plone/cropText">
           <div class="tileItem visualIEFloatFix"
              tal:define="obj item/getObject">
             <a href="#"

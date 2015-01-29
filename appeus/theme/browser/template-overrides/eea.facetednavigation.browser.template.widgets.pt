@@ -18,7 +18,7 @@
   </div>
 
   <div class="row">
-    <div class="col-md-8">
+    <div class="col-md-9">
       <!-- Left & Center-->
       <div id="center-and-left-area" class="row">
         <!-- Center -->
@@ -43,7 +43,7 @@
     </div>
 
     <!-- Right -->
-    <div tal:define="position string:right" id="right-area" class="col-md-4">
+    <div tal:define="position string:right" id="right-area" class="col-md-3">
       <metal:position use-macro="here/@@faceted_macros/macros/position" />
     </div>
   </div>
