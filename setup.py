@@ -33,6 +33,9 @@ setup(name='appeus.theme',
           'appeus.content',
           'eea.tags',
           'eea.facetednavigation',
+          'cs.editabletagline',
+          'cs.editablefooter',
+          'Products.PloneFormGen',
           # -*- Extra requirements: -*-
       ],
       entry_points="""
