@@ -50,8 +50,8 @@
                                 show_lower python:children and level+2 < bottomLevel;
                                 item_type_class string:itemtype-${item/portal_type};
                                 css_class_active python:(isCurrent or item.id==selected_portal_tab) and 'active' or '';
-                                css_class_submenu python:show_lower and 'dropdown' or '';
-                                css_class_dropdown python:show_lower and 'dropdown' or '';
+                                css_class_submenu string:;
+                                css_class_dropdown string:;
                                 css_class_submenu python:not main_menu and css_class_submenu or css_class_dropdown;
                                 css_class_to_show python:(css_class_active + css_class_submenu).strip() or None"
                     tal:attributes="class css_class_to_show"
