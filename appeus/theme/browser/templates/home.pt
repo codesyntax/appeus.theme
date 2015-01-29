@@ -61,7 +61,7 @@
                   <div class="tileImage">
                       <img src="" alt=""
                            tal:define="scales obj/@@images;
-                                       scale python:scales.scale('image', width=150, height=150, direction='down')"
+                                       scale python:scales.scale('image', width=210, height=210, direction='down')"
                            tal:replace="structure python:scale and scale.tag(css_class='tileImage') or None" />
                   </div>
             </a>
