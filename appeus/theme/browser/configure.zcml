@@ -28,6 +28,14 @@
       layer=".interfaces.IThemeSpecific"
      />
 
+  <browser:page
+    for="Products.CMFPlone.Portal.PloneSite"
+    name="appeus-configuration"
+    class=".controlpanel.AppEusConfigurationForm"
+    permission="cmf.ManagePortal"
+    layer=".interfaces.IThemeSpecific"
+     />
+
     <configure package="plone.batching">
       <browser:page
           name="batchnavigation"
