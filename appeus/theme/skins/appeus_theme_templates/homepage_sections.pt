@@ -15,7 +15,8 @@
 
     <p class="hidden" i18n:translate="heading_sections">Sections</p>
 
-    <nav class="navbar navbar-default" role="navigation">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
         <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse-1">
               <span class="sr-only" i18n:translate="" i18n:domain="plonetheme.bootstrap">
@@ -73,6 +74,7 @@
                 </tal:navitem>
                 </metal:main>
             </ul>
+        </div>
         </div>
     </nav>
 </tal:sections>
