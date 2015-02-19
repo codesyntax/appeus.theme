@@ -2,7 +2,7 @@
      http://twitter.github.com/bootstrap/components.html#pagination
      -->
 
-<div class="pagination"
+<div class="pagination listingBar"
   i18n:domain="plone"
   metal:define-macro="navigation"
   tal:define="batch view/batch|nothing;"

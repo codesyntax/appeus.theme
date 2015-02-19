@@ -36,15 +36,14 @@
     layer=".interfaces.IThemeSpecific"
      />
 
-    <configure package="plone.batching">
-      <browser:page
-          name="batchnavigation"
-          for="*"
-          permission="zope.Public"
-          class=".browser.PloneBootstrapBatchView"
-          template="batchnavigation_bootstrap.pt"
-          layer="appeus.theme.browser.interfaces.IThemeSpecific"
-          />
-    </configure>
+  <browser:page
+      name="batchnavigation"
+      for="*"
+      permission="zope.Public"
+      class="plone.batching.browser.PloneBootstrapBatchView"
+      template="templates/batchnavigation_bootstrap.pt"
+      layer="appeus.theme.browser.interfaces.IThemeSpecific"
+      />
+
 
 </configure>
