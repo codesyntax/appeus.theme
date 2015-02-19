@@ -1,10 +1,17 @@
 Changelog
 =========
 
-1.1 (unreleased)
+1.1 (2015-02-19)
 ----------------
 
-- Nothing changed yet.
+- register own template to work and add listingBar not to clash with faceted navigation [Mikel Larreategi <mlarreategi@codesyntax.com>]
+
+- copy to customize [Mikel Larreategi <mlarreategi@codesyntax.com>]
+
+- Merge remote-tracking branch 'origin/master' [Mikel Larreategi <mlarreategi@codesyntax.com>]
+
+- Initial commit [Mikel Larreategi <mlarreategi@codesyntax.com>]
+
 
 
 1.0 (2015-02-19)
