@@ -27,7 +27,8 @@ body{
   left: 230px;
   top: 132px;
   color: #666;
-  font-weight: 300;
+  font-weight: 400;
+
 }
 
 #portal-columns{
@@ -341,7 +342,7 @@ dl.portlet dd.portletItem, dl.portlet dd.portletFooter, dl.portletError dd {
 
 dl.portlet.portletNews dd.portletItem{
   clear:left;
-  border-bottom: 1px dotted #fff;
+  border-bottom: 1px dotted #c5c5c5;
   margin-bottom: 1em;
   padding-bottom: 1em;
 }
@@ -363,14 +364,21 @@ dl.portlet {
 .newsletter{
   display: block;
   float: left;
-  border: 1px solid #ccc;
+  border: 2px solid #428bca;
   width: 100%;
   padding: 1em;
-  margin-bottom: 2em;
+  margin: 1em 0 3em;
   border-radius: 10px;
+  text-align: left;
 }
 
+.newsletter strong{
+font-weight: 600;
+}
 
+.section-albisteak .newsletter{
+  margin-top: 3.5em;
+}
 
 
 footer{
