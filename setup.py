@@ -36,6 +36,8 @@ setup(name='appeus.theme',
           'cs.editabletagline',
           'cs.editablefooter',
           'Products.PloneFormGen',
+          'plone.formwidget.recaptcha',
+          'collective.recaptcha',
           # -*- Extra requirements: -*-
       ],
       entry_points="""
