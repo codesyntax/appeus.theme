@@ -209,7 +209,7 @@ div.tileImage{
 
 /**********************app bat***********/
 
-.portaltype-app #content, .template-newsitem_view #content
+.portaltype-app #content, .template-newsitem_view #content, .discussion, #commenting
 /*#faceted-right-column*/{
   background: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -217,6 +217,13 @@ div.tileImage{
   padding: 1em;
 }
 
+.discussion, #commenting{
+  margin-top: 2em;
+}
+
+.commentBody {
+    border: 0;
+}
 
 #details{
   background: #efefef;
@@ -224,6 +231,22 @@ div.tileImage{
   padding: 0.5em 1em;
 }
 
+.row #commenting fieldset, .row .discussion fieldset {
+    border:0;
+}
+
+
+.discussion .commentDate {
+    
+    display: inline;
+  margin-left: 1em;
+  color: #999;
+  font-weight: 200;
+}
+
+.documentByLine{
+  font-weight: 600;
+}
 
 #android{
   background: url(android.png) no-repeat top left;
@@ -364,7 +387,7 @@ dl.portlet {
 .newsletter{
   display: block;
   float: left;
-  border: 2px solid #428bca;
+  border: 1px solid #428bca;
   width: 100%;
   padding: 1em;
   margin: 1em 0 3em;
@@ -416,6 +439,7 @@ footer{
   font-size: 80%;
   padding: 1em 0;
   margin-top: 1em;
+  border-top: 1px solid #428bca;
 }
 
 #portal-logo img{
